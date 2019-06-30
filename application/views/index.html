@@ -1,0 +1,21 @@
+<html>
+<head>
+    <title>Space Clicker</title>
+     <script src="http://code.jquery.com/jquery-1.4.2.min.js">
+     	
+
+     	function getPos(el) {
+    // yay readability
+    for (var lx=0, ly=0;
+         el != null;
+         lx += el.offsetLeft, ly += el.offsetTop, el = el.offsetParent);
+    return {x: lx,y: ly};
+}
+     </script>
+</head>
+
+<body>
+    <span id='11a' style='top:55px;' onmouseover="GetPos(this);">stuff</span>
+<span id='12a' onmouseover="GetPos(this);">stuff</span>
+
+</body></html>
